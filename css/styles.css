@@ -1,42 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
 :root {
   --title-main-color: #212121;
   --main-text-color: #757575;
   --accent-text-color: #2196f3;
   --buttons-focus-color: #ffffff;
-}
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  color: var(--title-main-color);
-  text-decoration: none;
-}
-.logo .accent-color {
-  color: var(--accent-text-color);
-}
-
-.buttons {
-    color: var(--title-main-color);
+  --hero-background: #2F303A;
+  --second-color-background: #F5F4FA;
+  --border-color-header: #ECECEC;
   
-}
-.buttons:hover,
-.buttons:focus {
-color: var(--buttons-focus-color);
-  background-color:var(--accent-text-color);
-}
-.primary-text{
-    color: var(--main-text-color);
-}
-.primary-text-link{
-    color: var(--main-text-color);
-}
-.primary-text-link:hover,
-.primary-text-link:focus{
-color: var(--accent-text-color);
-}
-.title-color{
-    color: var(--title-main-color);
-}
+ 
 
+}
+.list{
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
