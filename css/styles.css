@@ -12,19 +12,17 @@ html {
   --hero-background: #2F303A;
   --second-color-background: #F5F4FA;
   --border-color-header: #ECECEC;
+  --icon-color-basic: #AFB1B8;
+
   
  
 
 }
-body{
-  width: 1880px;
-}
 .section{
-  width: 1450px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 200px;
+  margin-left: 200px;
 }
 .list{
   list-style-type: none;
@@ -32,6 +30,18 @@ body{
   padding: 0;
   margin: 0;
 }
+.current:active,
+.current:visited,
+.current:hover,
+.current:focus{
+  color: var(--accent-text-color);
+  
+}
+.current{
+  border-bottom: 2px solid;
+  border-color: var(--accent-text-color);
+}
+
 .buttons{
   padding: 10px 32px;
   background: #2196F3;
@@ -68,7 +78,7 @@ body{
   padding-bottom: 32px;
 
 }
-.header nav li + li{
+.header nav li:not(:first-child){
   margin-left: 50px;
 }
 .header ul a{
@@ -81,19 +91,33 @@ body{
   font-style: normal;
   margin-left: auto;
 }
-.header address ul:nth-child(1) a::before{
-background-image: url(../images/svg/envelope\ \(hover\).svg);
-background-position: center;
-background-size: 16px;
-background-size: cover;
 
+.header svg{
+  margin-right: 10px;
 }
-.header address li+ li{
-  margin-left: 50px;
+
+.header address li:not(:last-child){
+  margin-right: 50px;
+}
+.icon-header {
+  fill: currentColor;
+}
+.icon-header:hover{
+  fill: currentColor;
 }
 .focus:hover,
 .focus:focus{
+  fill: currentColor;
+  
   color: var(--accent-text-color);
+}
+.focus-icon{
+  fill: currentColor;
+}
+.focus-icon:hover,
+.focus-icon:focus{
+  fill: currentColor;
+  
 }
 .logo{
   font-weight: 700;
@@ -108,15 +132,19 @@ background-size: cover;
 }
     /* hero */
 .hero{
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
   text-align: center;
   color: var(--buttons-focus-color);
+  font-family: 'Roboto', sans-serif;
+}
+.hero div{
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: url(../images/Img\(26\).jpg);
   background-repeat: no-repeat;
   background: radial-gradient(rgba(47, 48, 58, 0.4)) ;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
 }
 .hero h1{
   margin-bottom: 0;
@@ -133,12 +161,26 @@ background-size: cover;
   font-family: 'Roboto', sans-serif;
   
 }
-.achievements ul:nth-child(1)::before{
-background-image: url(../images/svg/Vector.svg);
-height: 270px;
-background-position: center;
-background-size: cover;
+
+.achievements li div{
+  border-radius: 4px;
+ background-color: var(--second-color-background);
+ width: 270px;
+ height: 120px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ }
+.achievements svg {
+  /* margin-left: 100px;
+  margin-top: 25px;
+  margin-right: 100px;
+  margin-bottom: 25px; */
+  height: 110px;
+  width: 65px;
 }
+
 .achievements h2{
   display: none;
 }
@@ -177,6 +219,9 @@ line-height: 1.71;
   margin-left: 30px;
 }
 /* our team */
+.team h3{
+  margin-top: 0;
+}
 .team{
   font-family: 'Roboto', sans-serif;
   background-color: var(--second-color-background);
@@ -188,12 +233,85 @@ line-height: 1.71;
   background-color: var(--buttons-focus-color);
   
 }
+
+ .icon-message svg{
+   fill: currentColor; 
+}
+.icon-message{
+  height: 44px;
+  width: 44px;
+  align-items: center;
+}
+
+.icon-message a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  color: #AFB1B8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon-message a:hover,
+.icon-message a:focus{
+  border-color: var(--accent-text-color);
+  background-color: var(--accent-text-color);
+ 
+
+}
+.icon-message a:hover ,
+.icon-message a:focus {
+  color: var(--buttons-focus-color);
+}
+.icon-message svg:hover, 
+.icon-message svg:focus{
+  fill: currentColor;
+
+}
+.team ul ul{
+  gap: 10px;
+}
+.team ul ul li{
+  
+
+  height: 44px;
+  width: 44px;
+  box-shadow: none;
+}
+.team ul ul{
+  height: 44px;
+ 
+  
+}
+.social{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 .team ul{
   justify-content: center;
   display: flex;
+  align-items: center;
+  
+}
+.icon-message{
+  justify-content: center;
+  display: inline-flex;}
+
+.team div div:not()
+{
+  margin-bottom: 94px;
+}
+.team div.section{
   padding-bottom: 94px;
 }
-.team ul li:not(:first-child){
+
+.team div div{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.card-worker{
   margin-left: 30px;
 }
 .team h2{
@@ -209,6 +327,64 @@ line-height: 1.71;
 .team h3{
   text-align: center;
 
+}
+/* clients */
+.clients{
+  margin-top: 94px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+}
+.clients div{
+  width:1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients li{
+  width: 170px;
+  height: 92px;
+}
+.clients ul{
+  
+  display: flex;
+  justify-content: center;
+}
+.clients svg{
+  margin-top: 16px;
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+.clients {
+  margin-top: 20px;
+}
+.clients ul li {
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+ 
+  
+}
+.clients ul li a{
+  color: currentColor;
+ 
+}
+
+
+.clients ul li:hover,
+.clients ul li:focus{
+color: var(--accent-text-color);
+border-color: var(--accent-text-color);
+}
+.clients ul li:not(:first-child){
+  margin-left: 30px;
+}
+.clients{
+  margin-bottom: 94px;
 }
     /* footer */
     .footer{
@@ -231,6 +407,35 @@ line-height: 1.71;
     .footer address a:focus{
       color: var(--accent-text-color);
 
+    }
+    .footer .icon-message{
+      fill: var(--buttons-focus-color);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      width: 44px;
+      width: 44px;
+    }
+    .footer .list.social li:not(:first-child){
+      margin-left: 10px;
+    }
+    .footer p{
+      color: var(--buttons-focus-color);
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+    }
+    .footer .icon-message:hover{
+      background-color: var(--accent-text-color);
+    }
+    footer div.section,
+    .icon-list{
+      display: flex;
+    }
+    .join-list{
+      margin-left: 70px;
     }
     .footer ul li a{
       color : #FFFFFF99;
@@ -257,6 +462,7 @@ line-height: 1.71;
     text-align: center;
     border-radius: 4px;
     border-color: var(--second-color-background);
+    box-shadow: none;
   }
     .navigation li:not(:first-child){
       margin-left: 9px;
@@ -266,13 +472,14 @@ line-height: 1.71;
       border-color: var(--accent-text-color);
       background-color: var(--accent-text-color);
       color: var(--buttons-focus-color);
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: none;
+      
     }
     .navigation .list{
       display: flex;
       justify-content: center
     }
-    /* categoties */
+    /* categories */
     .categories ul{
       justify-content: center;
       display: flex;
@@ -281,12 +488,16 @@ line-height: 1.71;
     }
     .categories ul li:not(:nth-child(3n)){
       margin-right: 30px;
-
+    
+    }
+    .categories ul li:not(:nth-child(n + 6)){
+      margin-bottom: 30px;
     }
     .categories {
-      margin-left: auto;
-      margin-right: auto;
-      width: 1170px;
+      margin-left: 200px;
+      margin-right: 200px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     .categories h2{
       display: none;
@@ -299,10 +510,17 @@ line-height: 1.71;
       text-decoration: none;
     }
     .categories ul li{
-      
-      margin-bottom: 30px;
-      box-sizing: border-box;
-      border-bottom: 1px solid #EEEEEE;
+      height: 420px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+    border-top: 0px;
+    }
+    .categories ul li:hover,
+    .categories ul li:focus{
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    .categories ul li div{
+      margin-left: 24px;
     }
     .categories a{
       text-decoration: none;
@@ -316,6 +534,7 @@ line-height: 1.71;
     line-height: 2;
     }
     .categories a p{
+      margin-bottom: 20px;
       font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./images/svg/symbol-defs.svg">
   </head>
   <body>
     <header class="header">
@@ -21,17 +22,18 @@
       >
       <nav>
         <ul class="list">
-          <li><a href="./index.html"  class="list  focus">Studio</a></li>
+          <li><a href="./index.html"  class="list  focus current">Studio</a></li>
           <li><a href="./portfolio.html"  class="list focus">Portfolio</a></li>
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank" class="list focus">Contacts</a></li>
         </ul>
       </nav>
-      <address><ul class="list">
-        <li><a href="mailto:info@devstudio.com" class="list focus">info@devstudio.com</a></li>
-        <li><a href="tel:+38-096-111-11-11" class="list focus">+38 096 111 11 11</a></li>
+      <address>
+        <ul class="list">
+        <li><a href="mailto:info@devstudio.com" class="list focus"><svg class="focus-icon" width="16px" height="12px"><use href="./images/svg/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+        <li><a href="tel:+38-096-111-11-11" class="list focus"><svg width="10" height="16" class="focus focus-icon"><use href="./images/svg/symbol-defs.svg#icon-smartphone"></use></svg> +38 096 111 11 11</a></li>
       </ul>
-    </address>
-    </div>
+      </address>
+      </div>
     </header>
     <main>
       <section class="hero" >
@@ -45,6 +47,7 @@
         <div class="section" ><h2 >our achievements</h2>
           <ul class="list">
             <li>
+              <div><svg><use href="./images/svg/symbol-defs.svg#icon-antenna-1"></use></svg></div>
               <h3>Attention to detail</h3>
               <p >
                 Ideological considerations, as well as the beginning of daily work
@@ -52,6 +55,7 @@
               </p>
             </li>
             <li>
+             <div> <svg><use href="./images/svg/symbol-defs.svg#icon-clock-1"></use></svg></div>
               <h3>Punctuality</h3>
               <p >
                 The task of the organization, in particular the framework and
@@ -59,12 +63,14 @@
               </p>
             </li>
             <li>
+             <div> <svg><use href="./images/svg/symbol-defs.svg#icon-diagram-1"></use></svg></div>
               <h3>Planning</h3>
               <p >
                 Similarly, consultation with a broad asset is largely conditional.
               </p>
             </li>
             <li>
+             <div> <svg><use href="./images/svg/symbol-defs.svg#icon-astronaut-1"></use></svg></div>
               <h3>Modern technologies</h3>
               <p >
                 The significance of these problems is so obvious that the
@@ -88,32 +94,133 @@
       <section class="team">
         <div class="section" >
           <h2>our team</h2>
-          <ul class="list">
-            <li >
+          <ul class="list ">
+            <li>
               <img src="./images/img(13).jpg" alt="our worker" width="270" />
-              <h3>Igor Demyanenko</h3>
-              <p >Product Designer</p>
+              <div><h3>Igor Demyanenko</h3>
+                <p >Product Designer</p>
+                <ul class="list">
+                  <li class="icon-message ">
+                    <a href=""><svg width="20" height="20" class="icon-instagram">
+                      <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="20" height="16.25" class="icon-twiter">
+                      <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="15" height="30" class="icon-facebook">
+                      <use href="./images/svg/symbol-defs.svg#icon-facebook-1"   width="20" height="30" class="icon-facebook" ></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                   <a href=""> <svg width="20" height="20" class="icon-linkedin">
+                    <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></a>
+                  </li>
+                </ul></div>
             </li>
-            <li >
+            <li class="card-worker">
               <img src="./images/img(14).jpg" alt="our worker" width="270" />
-              <h3>Olga Repina</h3>
-              <p >Frontend Developer</p>
+              <div><h3>Olga Repina</h3>
+                <p >Frontend Developer</p>
+                <ul class="list">
+                  <li class="icon-message ">
+                    <a href=""><svg width="20" height="20" class="icon-instagram">
+                      <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="20" height="16.25" class="icon-twiter">
+                      <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="15" height="30" class="icon-facebook">
+                      <use href="./images/svg/symbol-defs.svg#icon-facebook-1"   width="20" height="30" class="icon-facebook" ></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                   <a href=""> <svg width="20" height="20" class="icon-linkedin">
+                    <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></a>
+                  </li>
+                </ul></div>
             </li>
-             <li >
+             <li class="card-worker">
               <img src="./images/img(15).jpg" alt="our worker" width="270" />
-              <h3>Nikolai Tarasov</h3>
-              <p >Marketing</p>
+              <div><h3>Nikolai Tarasov</h3>
+                <p >Marketing</p>
+                <ul class="list">
+                  <li class="icon-message ">
+                    <a href=""><svg width="20" height="20" class="icon-instagram">
+                      <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="20" height="16.25" class="icon-twiter">
+                      <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="15" height="30" class="icon-facebook">
+                      <use href="./images/svg/symbol-defs.svg#icon-facebook-1"   width="20" height="30" class="icon-facebook" ></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                   <a href=""> <svg width="20" height="20" class="icon-linkedin">
+                    <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></a>
+                  </li>
+                </ul></div>
             </li>
-             <li>
+             <li class="card-worker">
               <img src="./images/img(16).jpg" alt="our worker" width="270" />
-              <h3>Mikhail Ermakov</h3>
-              <p >UI Designer</p>
+              <div><h3>Mikhail Ermakov</h3>
+                <p >UI Designer</p>
+                <ul class="list social">
+                  <li class="icon-message ">
+                    <a href=""><svg width="20" height="20" class="icon-instagram">
+                      <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="20" height="16.25" class="icon-twiter">
+                      <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                    <a href=""><svg width="15" height="30" class="icon-facebook">
+                      <use href="./images/svg/symbol-defs.svg#icon-facebook-1"   width="20" height="30" class="icon-facebook" ></use>
+                    </svg></a>
+                  </li>
+                  <li class="icon-message">
+                   <a href=""> <svg width="20" height="20" class="icon-linkedin">
+                    <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg></a>
+                  </li>
+                </ul></div>
             </li>
           </ul></div>
       </section>
+      <section class="clients">
+        <div>
+          <h2>Regular customers</h2>
+          <ul class="list">
+            <li><a href="" class="focus"><svg class="focus-icon"><use href="./images/svg/symbol-defs.svg#icon-Logo"></use></svg></a></li>
+            <li><a href="" class="focus"><svg class="focus-icon"><use href="./images/svg/symbol-defs.svg#icon-Logo1"></use></svg></a></li>
+            <li><a href="" class="focus"><svg class="focus-icon"><use href="./images/svg/symbol-defs.svg#icon-Logo2"></use></svg></a></li>
+            <li><a href="" class="focus"><svg class="focus-icon"><use href="./images/svg/symbol-defs.svg#icon-Logo3"></use></svg></a></li>
+            <li><a href="" class="focus"><svg class="focus-icon"><use href="./images/svg/symbol-defs.svg#icon-Logo4"></use></svg></a></li>
+            <li><a href="" class="focus"><svg class="focus-icon"><use href="./images/svg/symbol-defs.svg#icon-Logo5"></use></svg></a></li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="section" ><a href="./index.html" 
+    <footer class="footer ">
+      <div class="section"><div  ><a href="./index.html" 
         class="logo list"><span >Web</span>studio</a
       >
       <address>
@@ -126,6 +233,31 @@
           <li><a href="tel:+38-096-111-11-11" class="list">+38 096 111 11 11</a></li>
         </ul>
       </address></div>
+      <div class="join-list">
+        <p>join to us</p>
+        <ul class="list social">
+          <li class="icon-message ">
+            <a href=""><svg width="20" height="20" class="icon-instagram">
+              <use href="./images/svg/symbol-defs.svg#icon-instagram-2"></use>
+            </svg></a>
+          </li>
+          <li class="icon-message">
+            <a href=""><svg width="20" height="16.25" class="icon-twiter">
+              <use href="./images/svg/symbol-defs.svg#icon-twitter-1"></use>
+            </svg></a>
+          </li>
+          <li class="icon-message">
+            <a href=""><svg width="15" height="30" class="icon-facebook">
+              <use href="./images/svg/symbol-defs.svg#icon-facebook-1"   width="20" height="30" class="icon-facebook" ></use>
+            </svg></a>
+          </li>
+          <li class="icon-message">
+           <a href=""> <svg width="20" height="20" class="icon-linkedin">
+            <use href="./images/svg/symbol-defs.svg#icon-linkedin-1"></use>
+          </svg></a>
+          </li>
+        </ul>
+      </div></div>
     </footer>
   </body>
 </html>
