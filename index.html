@@ -39,7 +39,7 @@
     <main>
       <section class="hero" >
         <div><h1 >
-          Effective Solutions <br />
+          Effective Solutions <br/>
           for your business
         </h1>
         <button type="button" class="buttons" data-modal-open>Order service</button></div>
@@ -258,18 +258,35 @@
           </svg></a>
           </li>
         </ul>
-      </div><div class="form-subscribe"><p>Subscribe to the newsletter</p><label for="mail"></label><input type="mail" id="mail" placeholder="E-mail"><button type="submit">subscribe<svg width="24px" height="24px"><use href="./images/svg/symbol-defs.svg#icon-icon-send"></use></svg></button></div></div>
+      </div><div class="form-subscribe"><p>Subscribe to the newsletter</p><label for="mail"></label><input type="mail" id="mail" placeholder="E-mail" class="footer-input"><button type="submit">subscribe<svg width="24px" height="24px"><use href="./images/svg/symbol-defs.svg#icon-icon-send"></use></svg></button></div></div>
     </footer>
     <div class="backdrop" data-modal>
       <div class="modal">
         
         <button data-modal-close><svg width="11" height="11"><use href="./images/svg/symbol-defs.svg#icon-Vector-1"></use></svg></button>
         <form action="" class="form"><h2>Leave your details, we will call you back</h2>
-          <div class="form-field"><label for="name" class="form-input">Name</label><input type="text" name="name" id="name" autofocus></input></div>
-          <div class="form-field"><label for="tel" class="form-input">Tel</label><input type="tel" name="tel" id="tel"></input></div>
-          <div class="form-field"><label for="mail" class="form-input">Mail</label><input type="email" name="mail" id="mail"></input></div>
-          <div class="form-field"><h3>Comment</h3><textarea name="Comment" id="Comment" cols="30" rows="10" placeholder="Enter text" class="form-input"></textarea></div>
-          <div class="form-field"><label for="contract" class="contract"><input type="checkbox" name="contract" id="contract" class="form-input">I agree with the mailing and accept the <a href="">Terms of the contract</a></label></div>
+          <div class="form-field">
+            <label for="name" class="form-input">Name</label>
+            <svg height="12px" width="12px" class="form-svg">
+              <use href="./images/svg/symbol-defs.svg#icon-Vector-2"></use>
+            </svg>
+            <input type="text" name="name" id="name" autofocus class="input-form" placeholder="Enter text"></input></div>
+          <div class="form-field">
+            <label for="tel" class="form-input">Telephone</label>
+            <svg height="13px" width="13px" class="form-svg">
+              <use href="./images/svg/symbol-defs.svg#icon-Vector-3"></use>
+            </svg>
+            <input type="tel" name="tel" id="tel" class="input-form" placeholder="Enter text"></input></div>
+          <div class="form-field">
+            <label for="mail" class="form-input">Mail</label>
+            <svg height="15px" width="12px" class="form-svg"><use href="./images/svg/symbol-defs.svg#icon-Vector-4"></use>
+            </svg>
+            <input type="email" name="mail" id="mail" class="input-form" placeholder="Enter text"></input></div>
+          <div class="form-field">
+            <h3>Comment</h3><textarea name="Comment" id="Comment" cols="30" rows="10" placeholder="Enter text" class="form-input"></textarea></div>
+          <div class="form-field">
+            <label for="contract" class="contract">
+              <input type="checkbox" name="contract" id="contract" class="form-input">I agree with the mailing and accept the <a href="">Terms of the contract</a></label></div>
           <button type="submit">Send</button></form>
       </div>
       <script>(() => {

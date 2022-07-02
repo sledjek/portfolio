@@ -533,6 +533,14 @@ border-color: var(--accent-text-color);
       fill: var(--buttons-focus-color);
 
     }
+    .footer div.section{
+      justify-content:center;
+    }
+  
+    .footer-input{
+      color: var(--buttons-focus-color);
+      outline: none;
+    }
     
     
     .footer .list.social li:not(:first-child){
@@ -753,6 +761,7 @@ border-color: var(--accent-text-color);
       
     }
     .modal button:not(form button):hover{
+      cursor: pointer;
       fill: var(--accent-text-color);
       
     }
@@ -763,6 +772,7 @@ border-color: var(--accent-text-color);
 
     }
     .form-field{
+      position: relative;
       margin-bottom: 10px;
       display: flex;
       flex-direction: column;
@@ -783,6 +793,7 @@ border-color: var(--accent-text-color);
 
     }
     .form button{
+      cursor: pointer;
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;
@@ -819,7 +830,44 @@ border-color: var(--accent-text-color);
       height: 15px;
     }
     .form-input{
+      outline: none;
       margin-bottom: 4px;
+    }
+    .form-input input{
+      outline: none;
+      
+    }
+    textarea[placeholder='Enter text']{
+      padding-top: 12px;
+      padding-left: 16px;
+    }
+    input[placeholder='Enter text'] {
+      /* opacity: 0; */
+      padding-left: 42px;
+    }
+    input[placeholder='E-mail'] {
+      padding-left: 15px;
+
+    }
+    .input-form{
+      outline: none;
+    }
+    .input-form::placeholder{
+      opacity: 0;
+    }
+    .form-svg{
+      left: 12px;
+      bottom: 14px;
+      position: absolute;
+    }
+    .form-field:hover h3,
+    .form-field:hover .input-form,
+    .form-field:hover .form-input,
+    .form-field:hover .form-svg{
+      border-color: var(--accent-text-color);
+      color: var(--accent-text-color);
+      fill: var(--accent-text-color);
+
     }
     .form-input, .form-field h3{
       font-family: 'Roboto';
@@ -830,11 +878,11 @@ border-color: var(--accent-text-color);
       letter-spacing: 0.01em;
       color: #757575;
     }
-    .form-input:active,
+    /* .form-input:active,
     .form-input:hover{
       color: var(--accent-text-color);
       border-color: var(--accent-text-color);
-    }
+    } */
     .form-field h3{
       margin-top: 0;
       margin-bottom: 4px;
